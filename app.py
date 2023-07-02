@@ -248,5 +248,5 @@ elif selected == "Method":
     st.write("this is for method")
 
 elif selected == "About":
-    st.write("Hi, cantik. tengok apa tu? hehehehe.")
+    st.write("Hi, I am Waiee.")
 
