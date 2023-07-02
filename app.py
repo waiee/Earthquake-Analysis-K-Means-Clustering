@@ -135,22 +135,22 @@ def home():
     st.header("Clustered Basemap")
     import streamlit as st
 
-    # image_path = "C:\\Users\\user\\Downloads\\projects\\data science assignment\\image_2023-07-02_20-40-03.png"
+    image_path = "C:\\Users\\user\\Downloads\\projects\\data science assignment\\image_2023-07-02_20-40-03.png"
 
-    # st.image(image_path, caption='Clustered Basemap', use_column_width=True)
+    st.image(image_path, caption='Clustered Basemap', use_column_width=True)
 
     # Filter the DataFrame based on cluster label values 0 and 1
-    filtered_df = newdf[newdf['clusters'].isin([0, 1])]
+    # filtered_df = newdf[newdf['clusters'].isin([0, 1])]
 
-    # Create scatter plot
-    fig, ax = plt.subplots()
-    ax.scatter(filtered_df['longitude'], filtered_df['latitude'], c=filtered_df['clusters'], cmap='Set1')
-    ax.set_xlabel('Longitude')
-    ax.set_ylabel('Latitude')
-    ax.set_title('Cluster Plot')
+    # # Create scatter plot
+    # fig, ax = plt.subplots()
+    # ax.scatter(filtered_df['longitude'], filtered_df['latitude'], c=filtered_df['clusters'], cmap='Set1')
+    # ax.set_xlabel('Longitude')
+    # ax.set_ylabel('Latitude')
+    # ax.set_title('Cluster Plot')
 
-    # Display the plot
-    st.pyplot(fig)
+    # # Display the plot
+    # st.pyplot(fig)
 
 
     st.write(
