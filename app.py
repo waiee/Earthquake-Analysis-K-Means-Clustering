@@ -15,6 +15,7 @@ st.set_page_config(page_title="Earthquake Clustering Analysis",
                    layout="wide")
 
 def home():
+    import streamlit as st
      # ----- HEADER AND OBJECTIVES ----- #
     st.markdown("")
     st.text("Prepared by Waiee Zainol")
