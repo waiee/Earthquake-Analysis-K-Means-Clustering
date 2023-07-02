@@ -16,7 +16,6 @@ st.set_page_config(page_title="Earthquake Clustering Analysis",
 
 def home():
      # ----- HEADER AND OBJECTIVES ----- #
-    st.title("Earthquake Analysis: K-Means Clustering :bar_chart:")
     st.markdown("")
     st.text("Prepared by Waiee Zainol")
     
@@ -240,6 +239,7 @@ with st.sidebar:
     )
 
 if selected == "Home":
+    st.title("Earthquake Analysis: K-Means Clustering :bar_chart:")
     home()
 
 elif selected == "Data Analysis":
