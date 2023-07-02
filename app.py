@@ -6,6 +6,7 @@ import plotly.express as px
 import seaborn as sns
 import pydeck as pdk
 import folium as folium
+import geopandas as gpd
 import streamlit as st
 from PIL import Image
 from streamlit_option_menu import option_menu
@@ -135,9 +136,23 @@ def home():
     st.header("Clustered Basemap")
     import streamlit as st
 
-    image_path = r"C:\Users\user\Downloads\projects\data science assignment\image_2023-07-02_20-40-03.png"
+    # image_path = "C:\\Users\\user\\Downloads\\projects\\data science assignment\\image_2023-07-02_20-40-03.png"
 
-    st.image(image_path, caption='Clustered Basemap', use_column_width=True)
+    # st.image(image_path, caption='Clustered Basemap', use_column_width=True)
+
+    # Filter the DataFrame based on cluster label values 0 and 1
+    filtered_df = newdf[newdf['cluster_label'].isin([0, 1])]
+
+    # Create scatter plot
+    fig, ax = plt.subplots()
+    ax.scatter(filtered_df['longitude'], filtered_df['latitude'], c=filtered_df['cluster_label'], cmap='Set1')
+    ax.set_xlabel('Longitude')
+    ax.set_ylabel('Latitude')
+    ax.set_title('Cluster Plot')
+
+    # Display the plot
+    st.pyplot(fig)
+
 
     st.write(
         """ 
