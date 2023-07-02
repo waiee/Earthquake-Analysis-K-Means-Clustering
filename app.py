@@ -245,6 +245,8 @@ def dataanalysis():
         """
     )
 
+def method():
+    
 
 # ----- SIDEBAR ----- #
 with st.sidebar:
@@ -263,6 +265,7 @@ elif selected == "Data Analysis":
    dataanalysis()
 
 elif selected == "Method":
+    st.title("Method Used")
     st.write("this is for method")
 
 elif selected == "About":
