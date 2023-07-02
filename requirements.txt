@@ -42,7 +42,7 @@ matplotlib==3.6.3
 matplotlib-inline==0.1.6
 mdurl==0.1.2
 nest-asyncio==1.5.6
-numpy==1.25.0
+numpy<=1.25.0
 openpyxl==3.1.2
 packaging==23.1
 pandas==2.0.3
