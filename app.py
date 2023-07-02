@@ -135,9 +135,8 @@ def home():
     st.header("Clustered Basemap")
     import streamlit as st
 
-    image_path = "C:\\Users\\user\\Downloads\\projects\\data science assignment\\image_2023-07-02_20-40-03.png"
-
-    st.image(image_path, caption='Clustered Basemap', use_column_width=True)
+    dp_image = Image.open("image_2023-07-02_20-40-03.png")
+    st.image(dp_image, caption="")
 
     # Filter the DataFrame based on cluster label values 0 and 1
     # filtered_df = newdf[newdf['clusters'].isin([0, 1])]
