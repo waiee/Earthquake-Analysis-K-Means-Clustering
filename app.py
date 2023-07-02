@@ -135,7 +135,7 @@ def home():
     st.header("Clustered Basemap")
     import streamlit as st
 
-    image_path = "C:\\Users\\user\\Downloads\\projects\\data science assignment\\image_2023-07-02_20-40-03.png"
+    image_path = "C:\Users\user\Downloads\projects\data science assignment\image_2023-07-02_20-40-03.png"
     st.image(image_path, caption='Clustered Basemap', use_column_width=True)
 
     st.write(
