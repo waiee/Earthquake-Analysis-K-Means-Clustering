@@ -246,7 +246,7 @@ def dataanalysis():
     )
 
 def method():
-    
+    st.write("this is for method")
 
 # ----- SIDEBAR ----- #
 with st.sidebar:
@@ -261,12 +261,12 @@ if selected == "Home":
     home()
 
 elif selected == "Data Analysis":
-   st.title("Exploratory Data Analysis")
-   dataanalysis()
+    st.title("Exploratory Data Analysis")
+    dataanalysis()
 
 elif selected == "Method":
     st.title("Method Used")
-    st.write("this is for method")
+    method()
 
 elif selected == "About":
     st.write("Hi, I am Waiee.")
