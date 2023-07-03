@@ -304,9 +304,21 @@ def method():
     )
 
     # ----- Silhouette Method ----- #
-    st.header("Silhouette Method")
-    image7 = Image.open("image/output6.png")
-    st.image(image7, caption="Silhouette Method")
+    # st.header("Silhouette Method")
+    # image7 = Image.open("image/output6.png")
+    # st.image(image7, caption="Silhouette Method")
+
+    container = st.beta_container()
+
+    # Center-align the image within the container using CSS styles
+    container.markdown(
+        f'<div style="display: flex; justify-content: center;"><img src="image/output6.png" alt="Silhouette Method"></div>',
+        unsafe_allow_html=True
+    )
+
+    # Add the caption
+    container.caption("Silhouette Method")
+
 
 # ----- SIDEBAR ----- #
 with st.sidebar:
