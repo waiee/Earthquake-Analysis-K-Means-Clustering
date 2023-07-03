@@ -357,9 +357,10 @@ def about():
         # Define the GitHub and LinkedIn links
         github_link = "[GitHub](https://github.com/waiee)"
         linkedin_link = "[LinkedIn](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)"
-
+        email_link = "[here](waiee.zainol@gmail.com)"
         # Display the sentence with the links
-        st.markdown(f"Check out my {github_link} & {linkedin_link} here!")
+        st.markdown(f"Check out my {github_link} & {linkedin_link} for more info!")
+        st.markdown(f"Or reach me out {email_link}!")
 
 
 
