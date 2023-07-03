@@ -303,6 +303,11 @@ def method():
         """
     )
 
+    # ----- Silhouette Method ----- #
+    st.header("Silhouette Method")
+    image7 = Image.open("image/output6.png")
+    st.image(image7, caption="Silhouette Method")
+
 # ----- SIDEBAR ----- #
 with st.sidebar:
     selected = st.selectbox(
