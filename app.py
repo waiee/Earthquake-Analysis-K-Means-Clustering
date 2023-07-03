@@ -308,7 +308,7 @@ def method():
     # image7 = Image.open("image/output6.png")
     # st.image(image7, caption="Silhouette Method")
 
-    container = st.beta_container()
+    container = st.container()
 
     # Center-align the image within the container using CSS styles
     container.markdown(
