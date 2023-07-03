@@ -359,7 +359,7 @@ def about():
         linkedin_link = "[LinkedIn](https://www.linkedin.com)"
 
         # Display the sentence with the links
-        st.markdown(f"Check out my {github_link} & {linkedin_link}")
+        st.markdown(f"Check out my {github_link} & {linkedin_link} here!")
 
 
 
