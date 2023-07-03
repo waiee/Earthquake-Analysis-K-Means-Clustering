@@ -308,16 +308,15 @@ def method():
     # image7 = Image.open("image/output6.png")
     # st.image(image7, caption="Silhouette Method")
 
-    container = st.container()
-
-    # Center-align the image within the container using CSS styles
-    container.markdown(
+    # Center-align the image using CSS styles
+    st.markdown(
         f'<div style="display: flex; justify-content: center;"><img src="image/output6.png" alt="Silhouette Method"></div>',
         unsafe_allow_html=True
     )
 
     # Add the caption
-    container.caption("Silhouette Method")
+    st.caption("Silhouette Method")
+
 
 
 # ----- SIDEBAR ----- #
