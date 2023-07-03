@@ -170,10 +170,10 @@ def home():
     # Display the images side by side
     col1, col2 = st.columns(2)
     with col1:
-        st.image(image2, caption="Image 1")
+        st.image(image2, caption="Mean Magnitudes")
 
     with col2:
-        st.image(image3, caption="Image 2")
+        st.image(image3, caption="Mean Depth")
 
     # ----- Final dataframe ----- #
     st.header("Final Dataframe")
