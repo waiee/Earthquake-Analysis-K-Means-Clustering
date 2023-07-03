@@ -159,6 +159,10 @@ def home():
         """
         )
 
+    # ----- Clustered Map ----- #
+    st.header("Mean Magnitude and Depth")
+    
+
     # ----- Final dataframe ----- #
     st.header("Final Dataframe")
     st.dataframe(newdf)
