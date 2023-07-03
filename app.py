@@ -311,15 +311,15 @@ def method():
     # Display the images side by side
     col1, col2 = st.columns(2)
     with col1:
-        st.image(image7, caption="Silhouette Method")
+        st.image(image8, caption="Silhouette Table")
 
     with col2:
-        st.image(image8, caption="Silhouette Table")
+        st.image(image7, caption="Silhouette Method")
 
     st.write(
         """
-        The plot above shows the Elbow method which consists of WSS(Within-Cluster Sum of Squares) Scores and number of clusters. The goal is to find which cluster has elbow shape. 
-        Based on the plot above, we can observe that the “elbow” is in range 3-4. After that, the number of clusters decreases continuously, which indicates that there is no potential “elbow” in that range. Overall, we can conclude that the optimal k(number of clusters) values is in the 3-4.
+        The plot above represents Silhouette Scores for different numbers of clusters. From the plot, we can observe that k=3 has the highest silhouette score, which is 0.612689 followed by k=2 with silhouette score of 0.550902. 
+        This result shows that the ideal k(number of clusters) values are between 2 and 3. Now, we can compare models using both clusters.
         """
     )
 
