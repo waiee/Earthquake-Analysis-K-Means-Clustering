@@ -230,7 +230,7 @@ def dataanalysis():
         """
     )
 
-    # ----- DENSITY Distribution ----- #
+    # ----- DENSITY Distribution Magnitude ----- #
     st.header("Density Distribution of Earthquake Magnitude")
 
 
@@ -250,6 +250,22 @@ def dataanalysis():
         The plot also reveals that the distribution follows a logarithmic scale, which means that an increase in magnitude by one unit corresponds to a ten-fold increase in the strength of the earthquake. The distribution curve helps us understand the frequency and severity of earthquakes around the world.
         """
     )
+
+    # ----- DENSITY Distribution Depth ----- #
+    df = pd.read_excel(
+        io='Significant_Earthquakes.xlsx',
+        engine="openpyxl", 
+        usecols='B:R',
+        nrows=1000,
+    )
+    
+    # Create the histogram plot
+    plt.figure(figsize=(10, 5))
+    sns.histplot(data=df, x='depth', stat='density', kde=True)
+
+    # Display the plot using Streamlit
+    st.pyplot(plt)
+
 
 def method():
     st.write("this is for method")
