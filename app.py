@@ -304,34 +304,26 @@ def method():
     )
 
     # ----- Silhouette Method ----- #
-    # st.header("Silhouette Method")
-    # image7 = Image.open("image/output6.png")
-    # st.image(image7, caption="Silhouette Method")
+    st.header("Silhouette Method")
+    image7 = Image.open("image/output6.png")
+    image8 = Image.open("image/output7.png")
 
- 
+    # Display the images side by side
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image(image7, caption="Silhouette Method")
 
-    # Assuming you have an image named "image7" and a caption for it
+    with col2:
+        st.image(image8, caption="Silhouette Table")
 
-    # Load the image
-    image = Image.open("image/output6.png")
-
-    # Calculate the width and height of the image
-    image_width, image_height = image.size
-
-    # Calculate the padding required to center the image
-    padding_left = int((st.sidebar.width - image_width) / 2)
-
-    # Apply the padding and display the image
-    st.sidebar.markdown(
-        f"<div style='display: flex; justify-content: center; padding-left: {padding_left}px;'>"
-        f"<img src='data:image/png;base64,{image}' alt='Silhouette Method' width='{image_width}px' height='{image_height}px'>"
-        "</div>",
-        unsafe_allow_html=True
+    st.write(
+        """
+        The plot above shows the Elbow method which consists of WSS(Within-Cluster Sum of Squares) Scores and number of clusters. The goal is to find which cluster has elbow shape. 
+        Based on the plot above, we can observe that the “elbow” is in range 3-4. After that, the number of clusters decreases continuously, which indicates that there is no potential “elbow” in that range. Overall, we can conclude that the optimal k(number of clusters) values is in the 3-4.
+        """
     )
 
-    # Add the caption
-    st.sidebar.caption("Silhouette Method")
-
+    
 
 
 
