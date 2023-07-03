@@ -182,6 +182,17 @@ def home():
     )
 
 def dataanalysis():
+    # ----- Correlation Heatmap ----- #
+    st.header("Correlation Heatmap")
+    corr_matrix = df2.corr()
+
+    # Create the correlation heatmap
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', square=True)
+
+    # Display the heatmap using Streamlit
+    st.pyplot(plt)
+
     # ----- BASEMAP ----- #
     st.header("Global Earthquakes with Magnitude above 5 since 1900")
     df2 = pd.read_csv('Significant_Earthquakes.csv', 
