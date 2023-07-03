@@ -252,8 +252,9 @@ def dataanalysis():
     )
 
     # ----- DENSITY Distribution Depth ----- #
+    st.header("Density Distribution of Earthquake Depth")
     newdf = pd.read_csv("newdf.csv")
-    
+
     # Create the histogram plot
     plt.figure(figsize=(10, 5))
     sns.histplot(data=newdf, x='depth', stat='density', kde=True)
