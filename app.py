@@ -374,6 +374,6 @@ elif selected == "About":
         st.image(dp_image, caption="")
     with right_column:
         st.subheader("Hi, I am Waiee :wave:")
-        st.title("Bachelor of Computer Science in Data Science")
-        st.write("I am passionate in Data Science, Data Analysis, AI and Machine Learning.")
+        st.title("Bachelor of Computer Science (Hons.) Data Science")
+        st.write("I am passionate in Data Science, AI and Machine Learning.")
 
