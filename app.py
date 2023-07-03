@@ -252,16 +252,11 @@ def dataanalysis():
     )
 
     # ----- DENSITY Distribution Depth ----- #
-    df = pd.read_excel(
-        io='Significant_Earthquakes.xlsx',
-        engine="openpyxl", 
-        usecols='B:R',
-        nrows=1000,
-    )
+    newdf = pd.read_csv("newdf.csv")
     
     # Create the histogram plot
     plt.figure(figsize=(10, 5))
-    sns.histplot(data=df, x='depth', stat='density', kde=True)
+    sns.histplot(data=newdf, x='depth', stat='density', kde=True)
 
     # Display the plot using Streamlit
     st.pyplot(plt)
