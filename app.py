@@ -351,7 +351,7 @@ def method():
 with st.sidebar:
     selected = st.selectbox(
         "Menu",
-        options=["Home", "Data Analysis", "Method", "About"],
+        options=["Home", "Data Analysis", "Model Comparison", "About"],
         index=0,
     )
 
@@ -363,8 +363,8 @@ elif selected == "Data Analysis":
     st.title("Exploratory Data Analysis")
     dataanalysis()
 
-elif selected == "Method":
-    st.title("Method Used")
+elif selected == "Model Comparison":
+    st.title("Model Comparison")
     method()
 
 elif selected == "About":
