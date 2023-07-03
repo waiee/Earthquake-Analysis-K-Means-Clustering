@@ -262,6 +262,13 @@ def dataanalysis():
     # Display the plot using Streamlit
     st.pyplot(plt)
 
+    st.write(
+        """
+        This plot shows the density distribution of earthquake depths since 1900. The distribution is also highly skewed to the left, indicating that the majority of earthquakes occur at shallow depths, while only a few occur at deeper depths. 
+        The plot reveals that most earthquakes occur within the first 100 kilometers of the Earth's crust. However, some regions, such as the Ring of Fire, experience more frequent and stronger earthquakes at greater depths. The distribution curve helps us understand the spatial and temporal patterns of earthquakes around the world.
+        """
+    )
+
 
 def method():
     st.write("this is for method")
