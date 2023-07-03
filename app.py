@@ -308,14 +308,30 @@ def method():
     # image7 = Image.open("image/output6.png")
     # st.image(image7, caption="Silhouette Method")
 
-    # Center-align the image using CSS styles
-    st.markdown(
-        f'<div style="display: flex; justify-content: center;"><img src="image/output6.png" alt="Silhouette Method"></div>',
+ 
+
+    # Assuming you have an image named "image7" and a caption for it
+
+    # Load the image
+    image = Image.open("image/output6.png")
+
+    # Calculate the width and height of the image
+    image_width, image_height = image.size
+
+    # Calculate the padding required to center the image
+    padding_left = int((st.sidebar.width - image_width) / 2)
+
+    # Apply the padding and display the image
+    st.sidebar.markdown(
+        f"<div style='display: flex; justify-content: center; padding-left: {padding_left}px;'>"
+        f"<img src='data:image/png;base64,{image}' alt='Silhouette Method' width='{image_width}px' height='{image_height}px'>"
+        "</div>",
         unsafe_allow_html=True
     )
 
     # Add the caption
-    st.caption("Silhouette Method")
+    st.sidebar.caption("Silhouette Method")
+
 
 
 
