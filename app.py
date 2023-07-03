@@ -283,7 +283,25 @@ def dataanalysis():
 
 
 def method():
-    st.write("this is for method")
+    # ----- Elbow Method ----- #
+    st.header("Mean Magnitude and Depth")
+    image5 = Image.open("image/output4.png")
+    image6 = Image.open("image/output5.png")
+
+    # Display the images side by side
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image(image5, caption="Mean Magnitudes")
+
+    with col2:
+        st.image(image6, caption="Mean Depth")
+
+    st.write(
+        """
+        The plot above shows the Elbow method which consists of WSS(Within-Cluster Sum of Squares) Scores and number of clusters. The goal is to find which cluster has elbow shape. 
+        Based on the plot above, we can observe that the “elbow” is in range 3-4. After that, the number of clusters decreases continuously, which indicates that there is no potential “elbow” in that range. Overall, we can conclude that the optimal k(number of clusters) values is in the 3-4.
+        """
+    )
 
 # ----- SIDEBAR ----- #
 with st.sidebar:
