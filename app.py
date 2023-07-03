@@ -368,7 +368,7 @@ elif selected == "Model Comparison":
     method()
 
 elif selected == "About":
-    dp_image = Image.open("image/output4.png")
+    dp_image = Image.open("image/waieeprofilepic")
     image_column, right_column = st.columns((1,2))
     with image_column:
         st.image(dp_image, caption="")
