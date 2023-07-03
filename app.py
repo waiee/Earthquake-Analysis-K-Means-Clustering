@@ -59,7 +59,7 @@ def home():
 
     # ----- LINE CHART by Year ----- #
 
-    st.header("Earthquake Occurences by Year")
+    st.header("Earthquake Occurrences by Year")
     df3 = pd.read_csv('df2.csv')
     earthquake_counts = df3['year'].value_counts().sort_index()
 
@@ -76,7 +76,7 @@ def home():
 
 
     # ----- HISTOGRAM by Month ----- #
-    st.header("Earthquake Occurences by Month")
+    st.header("Earthquake Occurrences by Month")
     earthquakes_by_month = df3['month'].value_counts().sort_index()
 
     # Create a bar chart
@@ -211,7 +211,7 @@ def dataanalysis():
 
     # ----- LINE CHART by Year ----- #
 
-    st.header("Earthquake Occurences by Year")
+    st.header("Earthquake Occurrences by Year")
     df3 = pd.read_csv('df2.csv')
     earthquake_counts = df3['year'].value_counts().sort_index()
 
@@ -228,7 +228,7 @@ def dataanalysis():
 
 
     # ----- HISTOGRAM by Month ----- #
-    st.header("Earthquake Occurences by Month")
+    st.header("Earthquake Occurrences by Month")
     earthquakes_by_month = df3['month'].value_counts().sort_index()
 
     # Create a bar chart
