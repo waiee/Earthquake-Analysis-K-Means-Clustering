@@ -146,13 +146,6 @@ if selected == "Home":
             st.subheader("Hi, I am Waiee :wave:")
             st.title("Bachelor of Computer Science in Data Science")
             st.write("I am passionate in Data Science, Data Analysis, and Machine Learning.")
-            button_container = st.container()
-
-            with button_container:
-                st.button("[GitHub](https://github.com)")
-            button_container.write(" ")
-            with button_container:
-                st.button("[LinkedIn](https://www.linkedin.com)")
 
 
 ### WHAT I DO ###
