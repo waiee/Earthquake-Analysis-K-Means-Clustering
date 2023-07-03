@@ -284,7 +284,7 @@ def dataanalysis():
 
 def method():
     # ----- Elbow Method ----- #
-    st.header("Mean Magnitude and Depth")
+    st.header("Elbow Method")
     image5 = Image.open("image/output4.png")
     image6 = Image.open("image/output5.png")
 
