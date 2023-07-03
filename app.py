@@ -47,7 +47,7 @@ def home():
     df2 = pd.read_csv('Significant_Earthquakes.csv', 
                     usecols=['latitude', 'longitude', 'mag'])
     df2.columns = ['latitude', 'longitude', 'mag']
-    st.map(df2, caption="test")
+    st.map(df2)
 
     st.write(
         """
