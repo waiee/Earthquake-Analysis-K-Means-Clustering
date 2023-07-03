@@ -338,8 +338,9 @@ def method():
 
     st.write(
         """
-        The plot above represents Silhouette Scores for different numbers of clusters. From the plot, we can observe that k=3 has the highest silhouette score, which is 0.612689 followed by k=2 with silhouette score of 0.550902. 
-        This result shows that the ideal k(number of clusters) values are between 2 and 3. Now, we can compare models using both clusters.
+        The graph above represents clustering analysis where k=2 and clustering analysis where k=3. Based on the plot, we can observe that the first figure(k=2) has less overlapped points compared to the second figure(k=3) which indicates better performance in clustering. 
+        Moreover, we can see an obvious pattern in the first figure(k=2) compared to the second figure(k=3) which shows the data is clustered well. Thus, we can conclude that the first figure(k=2) has better clustering results since it has a small amount of overlapped data points and has an obvious pattern. Since our objective is just to identify high and low risk locations for earthquake occurrences, therefore we choose k = 2 in this case. 
+        Further studies are needed in future in order to obtain better and more accurate results.
         """
     )
     
