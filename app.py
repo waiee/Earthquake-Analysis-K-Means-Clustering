@@ -189,8 +189,7 @@ def dataanalysis():
 
     st.write(
             """
-            Based on the heatmap above, it shows us almost the same result as previous correlation analysis. 
-            The highest positive correlation is 0.72, between magNst and nst with brighter color. Other than that, the highest negative correlation is -0.68 between year and magError with the darkest color. 
+            Based on the heatmap above, the highest positive correlation is 0.72, between magNst and nst with brighter color. Other than that, the highest negative correlation is -0.68 between year and magError with the darkest color. 
             """
              )
     
