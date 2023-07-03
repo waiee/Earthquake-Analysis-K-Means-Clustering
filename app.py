@@ -184,7 +184,8 @@ def home():
 def dataanalysis():
     # ----- Correlation Heatmap ----- #
     st.header("Correlation Heatmap")
-    corr_matrix = df2.corr()
+    dfcorr= pd.read_csv('Significant_Earthquakes.csv')
+    corr_matrix = dfcorr.corr()
 
     # Create the correlation heatmap
     plt.figure(figsize=(10, 8))
