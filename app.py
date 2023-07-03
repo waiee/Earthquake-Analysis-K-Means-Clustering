@@ -314,7 +314,7 @@ def method():
         st.image(image8, caption="Silhouette Table")
 
     with col2:
-        st.image(image7, caption="Silhouette Method")
+        st.image(image7, caption="Silhouette Scores")
 
     st.write(
         """
