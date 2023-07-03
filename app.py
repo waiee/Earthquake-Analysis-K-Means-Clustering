@@ -355,8 +355,8 @@ def about():
         st.write("I am passionate in Data Science, AI and Machine Learning.")
 
         # Define the GitHub and LinkedIn links
-        github_link = "[GitHub](https://github.com)"
-        linkedin_link = "[LinkedIn](https://www.linkedin.com)"
+        github_link = "[GitHub](https://github.com/waiee)"
+        linkedin_link = "[LinkedIn](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)"
 
         # Display the sentence with the links
         st.markdown(f"Check out my {github_link} & {linkedin_link} here!")
