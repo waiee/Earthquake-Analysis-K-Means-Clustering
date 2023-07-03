@@ -354,13 +354,13 @@ def about():
         st.title("Bachelor of Computer Science (Hons.) Data Science")
         st.write("I am passionate in Data Science, AI and Machine Learning.")
 
-        button_container = st.container()
+        # Define the GitHub and LinkedIn links
+        github_link = "[GitHub](https://github.com)"
+        linkedin_link = "[LinkedIn](https://www.linkedin.com)"
 
-        with button_container:
-            st.button("[GitHub](https://github.com)")
-        button_container.write(" ")
-        with button_container:
-            st.button("[LinkedIn](https://www.linkedin.com)")
+        # Display the sentence with the links
+        st.markdown(f"Check out my {github_link} and {linkedin_link}")
+
 
 
 
