@@ -161,7 +161,21 @@ def home():
 
     # ----- Clustered Map ----- #
     st.header("Mean Magnitude and Depth")
-    
+
+
+    # Open the images
+    image2 = Image.open("image/output1.png")
+    image3 = Image.open("image/output2.png")
+
+    # Display the images side by side
+    col1, col2 = st.beta_columns(2)
+    with col1:
+        st.image(image1, caption="Image 1")
+
+    with col2:
+        st.image(image2, caption="Image 2")
+
+
 
     # ----- Final dataframe ----- #
     st.header("Final Dataframe")
