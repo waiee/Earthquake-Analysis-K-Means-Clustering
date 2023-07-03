@@ -138,20 +138,6 @@ def home():
     image1 = Image.open("image/image_2023-07-02_20-40-03.png")
     st.image(image1, caption="Clustered Basemap")
 
-    # Filter the DataFrame based on cluster label values 0 and 1
-    # filtered_df = newdf[newdf['clusters'].isin([0, 1])]
-
-    # # Create scatter plot
-    # fig, ax = plt.subplots()
-    # ax.scatter(filtered_df['longitude'], filtered_df['latitude'], c=filtered_df['clusters'], cmap='Set1')
-    # ax.set_xlabel('Longitude')
-    # ax.set_ylabel('Latitude')
-    # ax.set_title('Cluster Plot')
-
-    # # Display the plot
-    # st.pyplot(fig)
-
-
     st.write(
         """ 
         This clustered map displays every earthquake that has occured around the globe since 1900. Each point on the map represents the location (latitude and longitude) of the earthquake which is plotted based on their epicenter coordinates. From this figure, we can identify areas and locations with a high risk of earthquake occurrences. 
@@ -161,6 +147,13 @@ def home():
 
     # ----- Clustered Map ----- #
     st.header("Mean Magnitude and Depth")
+    st.write(
+        """
+        First figure represents Comparison of Mean Magnitudes of k=2.. Based on the graph, we can observe that cluster label 1 has slightly higher mean magnitude (5.461928395135152) compared to label 0 (5.453090283336001). Moreover, second figure represents Comparison of Mean Depth of k=2. 
+        Based on the graph, we can observe that cluster label 1 has higher mean depth (72.87603063277942) compared to label 0 (56.677855162478004).
+        Based on the result, we can observe that cluster label 1 has higher mean magnitude and mean depth. Thus, we can conclude that cluster label 1 has higher risk of earthquake occurrences compared to label 0.
+        """
+    )
 
 
     # Open the images
