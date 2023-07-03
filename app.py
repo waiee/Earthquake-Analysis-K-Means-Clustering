@@ -147,16 +147,6 @@ def home():
 
     # ----- Clustered Map ----- #
     st.header("Mean Magnitude and Depth")
-    st.write(
-        """
-        First figure represents Comparison of Mean Magnitudes of k=2.. Based on the graph, we can observe that cluster label 1 has slightly higher mean magnitude (5.461928395135152) compared to label 0 (5.453090283336001). Moreover, second figure represents Comparison of Mean Depth of k=2. 
-        Based on the graph, we can observe that cluster label 1 has higher mean depth (72.87603063277942) compared to label 0 (56.677855162478004).
-        Based on the result, we can observe that cluster label 1 has higher mean magnitude and mean depth. Thus, we can conclude that cluster label 1 has higher risk of earthquake occurrences compared to label 0.
-        """
-    )
-
-
-    # Open the images
     image2 = Image.open("image/output1.png")
     image3 = Image.open("image/output2.png")
 
@@ -167,6 +157,14 @@ def home():
 
     with col2:
         st.image(image3, caption="Mean Depth")
+
+    st.write(
+        """
+        First figure represents Comparison of Mean Magnitudes of k=2.. Based on the graph, we can observe that cluster label 1 has slightly higher mean magnitude (5.461928395135152) compared to label 0 (5.453090283336001). Moreover, second figure represents Comparison of Mean Depth of k=2. 
+        Based on the graph, we can observe that cluster label 1 has higher mean depth (72.87603063277942) compared to label 0 (56.677855162478004).
+        Based on the result, we can observe that cluster label 1 has higher mean magnitude and mean depth. Thus, we can conclude that cluster label 1 has higher risk of earthquake occurrences compared to label 0.
+        """
+    )
 
     # ----- Final dataframe ----- #
     st.header("Final Dataframe")
