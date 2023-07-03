@@ -323,6 +323,25 @@ def method():
         """
     )
 
+    # ----- Model Comparison ----- #
+    st.header("Models Comparison")
+    cimage = Image.open("image/cluster2.png")
+    cimage2 = Image.open("image/cluster3.png")
+
+    # Display the images side by side
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image(cimage, caption="k=2")
+
+    with col2:
+        st.image(cimage2, caption="k=3")
+
+    st.write(
+        """
+        The plot above represents Silhouette Scores for different numbers of clusters. From the plot, we can observe that k=3 has the highest silhouette score, which is 0.612689 followed by k=2 with silhouette score of 0.550902. 
+        This result shows that the ideal k(number of clusters) values are between 2 and 3. Now, we can compare models using both clusters.
+        """
+    )
     
 
 
