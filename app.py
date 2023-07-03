@@ -186,6 +186,13 @@ def dataanalysis():
     st.header("Correlation Heatmap")
     image4 = Image.open("image/output3.png")
     st.image(image4, caption="Correlation Heatmap")
+
+    st.write(
+            """
+            Based on the heatmap above, it shows us almost the same result as previous correlation analysis. 
+            The highest positive correlation is 0.72, between magNst and nst with brighter color. Other than that, the highest negative correlation is -0.68 between year and magError with the darkest color. 
+            """
+             )
     
 
     # ----- BASEMAP ----- #
