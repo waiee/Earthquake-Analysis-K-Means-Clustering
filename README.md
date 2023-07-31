@@ -6,7 +6,7 @@ Using the K-Means clustering algorithm, I analyzed earthquake datasets and succe
 
 Also, I've hosted the project on Streamlit, providing an interactive and user-friendly platform to explore the results.
 
-Link: https://lnkd.in/gwHwRdG8
+Link: https://earthquake-analysis-k-means-clustering-waiee.streamlit.app
 
 By making these findings accessible, I hope to contribute to the field of earthquake research and support authorities in their efforts to implement effective disaster preparedness and risk management measures. 📈
 
